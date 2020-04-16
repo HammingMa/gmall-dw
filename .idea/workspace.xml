@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f33583ad-5a73-47fa-b597-09b3e27359c0" name="Default Changelist" comment="" />
+    <list default="true" id="f33583ad-5a73-47fa-b597-09b3e27359c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/flume/target/" />
@@ -66,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sql/ads_continuity_wk_count.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="561">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -128,6 +130,9 @@
       <replace>dws_uv_detail_mn</replace>
       <replace>do_date</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -219,6 +224,7 @@
     <option name="width" value="1869" />
     <option name="height" value="1001" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -304,16 +310,23 @@
       <workItem from="1586785320036" duration="2904000" />
       <workItem from="1586788342784" duration="1071000" />
       <workItem from="1586826364642" duration="24536000" />
-      <workItem from="1586999870888" duration="25545000" />
+      <workItem from="1586999870888" duration="25894000" />
     </task>
+    <task id="LOCAL-00001" summary="用户行为分析提交">
+      <created>1587049111473</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587049111473</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54056000" />
+    <option name="totallyTimeSpent" value="54405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1459" y="54" width="1869" height="1001" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2605364" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -349,6 +362,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="用户行为分析提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户行为分析提交" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sql/ddl/ddl_dwd_display_log.sql">
@@ -699,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/ads_continuity_wk_count.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        <state relative-caret-position="561">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
