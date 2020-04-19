@@ -13,8 +13,8 @@ do
     ## ./dws_new_mid_day.sh $begin_date
     ## ./ads_new_mid_count.sh $begin_date
     ## ./dws_user_retention_day.sh $begin_date
-    ./ads_user_retention_day_count.sh $begin_date
-    ./ads_user_retention_day_rate.sh $begin_date
+    ads_user_retention_day_count.sh $begin_date
+    ads_user_retention_day_rate.sh $begin_date
 
     begin_date=`date -d " $begin_date  1 day" +%F`
     let i+=1
