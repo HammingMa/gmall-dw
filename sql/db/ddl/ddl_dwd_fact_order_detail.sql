@@ -23,7 +23,7 @@ insert overwrite table dwd_fact_order_detail partition (dt='$do_date')
 select
     a.id           as id            , -- 订单编号
     a.order_id     as order_id      , -- 订单号
-    a.user_id      as user_id       , -- 用户id
+    b.user_id      as user_id       , -- 用户id
     a.sku_id       as sku_id        , -- sku商品id
     a.sku_name     as sku_name      , -- 商品名称
     a.order_price  as order_price   , -- 商品价格

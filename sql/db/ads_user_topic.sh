@@ -1,20 +1,20 @@
-use gmall;
-drop table if exists ads_user_topic;
+#!/bin/bash
 
-create external table ads_user_topic
-(
-    `dt`                    string COMMENT '统计日期',
-    `day_users`             string COMMENT '活跃会员数',
-    `day_new_users`         string COMMENT '新增会员数',
-    `day_new_payment_users` string COMMENT '新增消费会员数',
-    `payment_users`         string COMMENT '总付费会员数',
-    `users`                 string COMMENT '总会员数',
-    `day_users2users`       decimal(10, 2) COMMENT '会员活跃率',
-    `payment_users2users`   decimal(10, 2) COMMENT '会员付费率',
-    `day_new_users2users`   decimal(10, 2) COMMENT '会员新鲜度'
-) COMMENT '会员主题信息表'
-    row format delimited fields terminated by '\t'
-    location '/warehouse/gmall/ads/ads_user_topic';
+if [ -n $1 ]; then
+    do_date=$1
+else
+    do_date=`date -d '-1 day' +%F`
+fi
+
+echo $do_date
+
+db=gmall
+hive=/opt/hive/bin/hive
+hadoop=/opt/hadoop/bin/hadoop
+
+sql="
+set hive.exec.dynamic.partition.mode=nonstrict;
+use $db;
 
 insert into table ads_user_topic
 select dt                    as dt,                    -- 统计日期
@@ -35,3 +35,8 @@ from (
                 count(*)                                        as users                  -- 总会员数
          from dwt_user_topic
      ) a;
+
+"
+
+## 加载数据
+$hive -e "$sql"

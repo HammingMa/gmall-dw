@@ -41,7 +41,7 @@ from
         from ods_sku_info
         where dt='$do_date'
     ) a
-inner join
+left join
     (
         select
             *
@@ -49,7 +49,7 @@ inner join
         where dt='$do_date'
     ) b
 on a.tm_id=b.tm_id
-inner join
+left join
     (
         select
             *
@@ -57,7 +57,7 @@ inner join
         where dt='$do_date'
     ) c
 on a.spu_id = c.id
-inner join
+left join
     (
         select
             *
@@ -65,7 +65,7 @@ inner join
         where dt='$do_date'
     ) d
 on a.category3_id=d.id
-inner join
+left join
     (
         select
             *
@@ -73,7 +73,7 @@ inner join
         where dt='$do_date'
     ) e
     on d.category2_id=e.id
-inner join
+left join
     (
         select
             *

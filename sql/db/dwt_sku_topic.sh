@@ -62,7 +62,7 @@ tmp_new as (
 )
 insert overwrite table dwt_sku_topic
 select nvl(b.sku_id, a.sku_id)                                             as sku_id,                          -- sku_id
-       nvl(b.spu_id, a.sku_id)                                             as spu_id,                          -- spu_id
+       nvl(b.spu_id, a.spu_id)                                             as spu_id,                          -- spu_id
        nvl(b.order_count30, 0)                                              as order_last_30d_count,            -- 最近30日被下单次数
        nvl(b.order_num30, 0)                                               as order_last_30d_num,              -- 最近30日被下单件数
        nvl(b.order_amount30, 0)                                            as order_last_30d_amount,           -- 最近30日被下单金额

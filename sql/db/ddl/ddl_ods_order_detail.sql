@@ -4,9 +4,9 @@ drop table if exists ods_order_detail;
 create external table ods_order_detail(
     `id` string COMMENT '订单编号',
     `order_id` string COMMENT '订单号',
-    `user_id` string COMMENT '用户 id',
     `sku_id` string COMMENT '商品 id',
     `sku_name` string COMMENT '商品名称',
+    `img_url` string COMMENT '图片地址',
     `order_price` decimal(10,2) COMMENT '商品价格',
     `sku_num` bigint COMMENT '商品数量',
     `create_time` string COMMENT '创建时间'
